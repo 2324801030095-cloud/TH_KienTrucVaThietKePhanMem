@@ -14,7 +14,7 @@ public static class EFInstaller
             if (useInMemoryDatabase)
                 options.UseInMemoryDatabase("Products");
             else
-                options.UseSqlServer(configuration.GetConnectionString("Products"));
+                options.UseNpgsql(configuration.GetConnectionString("Products"));
         });
 
         services.AddScoped<IProductRepository, ProductRepository>();

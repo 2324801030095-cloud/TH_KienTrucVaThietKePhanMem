@@ -14,11 +14,13 @@ Các project nhắm `net8.0`. Cần cài .NET 8 SDK/runtime và có kết nối 
 
 ## Microservices
 
-Mỗi service có project API definition (`*.Api`), implementation và test (`*.Test`). Các service: Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing và Product. Pricing còn có project kiểm thử tích hợp riêng.
+Mỗi service có project API definition (`*.Api`), implementation và test (`*.Test`). Các service: Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing, Product và Document. Pricing còn có project kiểm thử tích hợp riêng. Ba project của Document Service hiện là khung theo yêu cầu Task #1; tích hợp JS Report chưa được triển khai.
 
 ## Hạ tầng và dữ liệu
 
-- Script khởi tạo database PostgreSQL: `postgres/postgres/createdatabases.sql`.
+- Script tạo bốn database PostgreSQL đi kèm: `postgres/postgres/createdatabases.sql`.
+- Product Service dùng Npgsql/EF Core và database `lab_netmicro_products`; tạo database này bằng `postgres/postgres/createproductsdatabase.sql`.
+- Database provider theo service: Policy dùng NHibernate/Npgsql; Payment dùng Marten và Hangfire PostgreSQL; Pricing dùng Marten; Product dùng EF Core/Npgsql. Cấu hình các chuỗi kết nối cục bộ qua `ConnectionStrings__DefaultConnection`, `ConnectionStrings__PgConnection` và `ConnectionStrings__Products` theo service; không đưa giá trị có mật khẩu vào Git.
 - Cấu hình Docker Compose và script chạy: `scripts/scripts/`.
 - Eureka: `eureka-server/eureka-server/`.
 - Elasticsearch, RabbitMQ và Docker cần chạy riêng hoặc qua Compose trước khi chạy toàn bộ ứng dụng.

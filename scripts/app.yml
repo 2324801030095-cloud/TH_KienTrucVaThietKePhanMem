@@ -3,7 +3,7 @@ version: '3'
 services:
   dotnet-agent-portal-gateway:
     build: 
-      context: ../../
+      context: ../
       dockerfile: AgentPortalApiGateway/AgentPortalApiGateway/Dockerfile
     image: dotnet-agent-portal-gateway
     container_name: dotnet-agent-portal-gateway
@@ -85,7 +85,7 @@ services:
     - 5035:5035
 
   dotnet-web-vue:
-    build: ../../Web/Web
+    build: ../Web
     image: dotnet-web-vue
     container_name: dotnet-web-vue
     ports:

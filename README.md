@@ -18,11 +18,11 @@ Chín service Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing, Pr
 
 ## Hạ tầng và dữ liệu
 
-- Script tạo bốn database PostgreSQL đi kèm: `postgres/postgres/createdatabases.sql`.
-- Product Service dùng Npgsql/EF Core và database `lab_netmicro_products`; tạo database này bằng `postgres/postgres/createproductsdatabase.sql`.
+- Script tạo bốn database PostgreSQL đi kèm: `postgres/createdatabases.sql`.
+- Product Service dùng Npgsql/EF Core và database `lab_netmicro_products`; tạo database này bằng `postgres/createproductsdatabase.sql`.
 - Database provider theo service: Policy dùng NHibernate/Npgsql; Payment dùng Marten và Hangfire PostgreSQL; Pricing dùng Marten; Product dùng EF Core/Npgsql. Cấu hình các chuỗi kết nối cục bộ qua `ConnectionStrings__DefaultConnection`, `ConnectionStrings__PgConnection` và `ConnectionStrings__Products` theo service; không đưa giá trị có mật khẩu vào Git.
-- Cấu hình Docker Compose và script chạy: `scripts/scripts/`.
-- Eureka: `eureka-server/eureka-server/`.
+- Cấu hình Docker Compose và script chạy: `scripts/`.
+- Eureka: `eureka-server/`.
 - Elasticsearch, RabbitMQ và Docker cần chạy riêng hoặc qua Compose trước khi chạy toàn bộ ứng dụng.
 
 Không đưa file `.env`, `appsettings*.json`, database dump hoặc credential vào Git. Khai báo giá trị môi trường cục bộ trong máy chạy, không lưu trong repository.

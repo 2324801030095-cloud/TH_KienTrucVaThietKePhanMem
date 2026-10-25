@@ -2,14 +2,14 @@ version: '3'
 
 services:
   eureka:
-    build: ../../eureka-server/eureka-server
+    build: ../eureka-server
     image: eureka-server
     container_name: eureka-server
     ports:
       - 8761:8761
 
   postgres:
-    build: ../../postgres/postgres
+    build: ../postgres
     image: postgres
     container_name: postgres
     volumes:

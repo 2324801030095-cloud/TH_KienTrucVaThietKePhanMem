@@ -25,6 +25,7 @@ public class InsuranceAgentsInMemoryDb : IInsuranceAgents
 
     public InsuranceAgent FindByLogin(string login)
     {
-        return db[login];
+        db.TryGetValue(login, out var agent);
+        return agent;
     }
 }

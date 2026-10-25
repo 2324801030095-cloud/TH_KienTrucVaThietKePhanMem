@@ -5,6 +5,7 @@ using Alba;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PricingService.Init;
 using Testcontainers.PostgreSql;
 using Xunit;
 
@@ -34,6 +35,9 @@ public class IntegrationTestsFixture : IAsyncLifetime
             });
 
         SystemUnderTest = new AlbaHost(hostBuilder);
+
+        using var scope = SystemUnderTest.Services.CreateScope();
+        await scope.ServiceProvider.GetRequiredService<DataLoader>().Seed();
     }
 
     public async Task DisposeAsync()

@@ -6,6 +6,7 @@ using static Xunit.Assert;
 
 namespace PolicyService.Test.Domain;
 
+[Collection("Policy time")]
 public class OfferTest
 {
     [Fact]

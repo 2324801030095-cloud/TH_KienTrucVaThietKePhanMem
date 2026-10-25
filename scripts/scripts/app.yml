@@ -13,7 +13,7 @@ services:
   dotnet-auth-service:
     build: 
       context: ../
-      dockerfile: AuthService/Dockerfile
+      dockerfile: AuthService/AuthService/Dockerfile
     image: dotnet-auth-service
     container_name: dotnet-auth-service
     ports:
@@ -22,7 +22,7 @@ services:
   dotnet-chat-service:
     build: 
       context: ../
-      dockerfile: ChatService/Dockerfile
+      dockerfile: ChatService/ChatService/Dockerfile
     image: dotnet-chat-service
     container_name: dotnet-chat-service
     ports:
@@ -31,7 +31,7 @@ services:
   dotnet-payment-service:
     build: 
       context: ../
-      dockerfile: PaymentService/Dockerfile
+      dockerfile: PaymentService/PaymentService/Dockerfile
     image: dotnet-payment-service
     container_name: dotnet-payment-service
     ports:
@@ -40,7 +40,7 @@ services:
   dotnet-policy-search-service:
     build: 
       context: ../
-      dockerfile: PolicySearchService/Dockerfile
+      dockerfile: PolicySearchService/PolicySearchService/Dockerfile
     image: dotnet-policy-search-service
     container_name: dotnet-policy-search-service
     ports:
@@ -49,7 +49,7 @@ services:
   dotnet-policy-service:
     build: 
       context: ../
-      dockerfile: PolicyService/Dockerfile
+      dockerfile: PolicyService/PolicyService/Dockerfile
     image: dotnet-policy-service
     container_name: dotnet-policy-service
     ports:
@@ -58,7 +58,7 @@ services:
   dotnet-pricing-service:
     build: 
       context: ../
-      dockerfile: PricingService/Dockerfile
+      dockerfile: PricingService/PricingService/Dockerfile
     image: dotnet-pricing-service
     container_name: dotnet-pricing-service
     ports:
@@ -67,7 +67,7 @@ services:
   dotnet-product-service:
     build: 
       context: ../
-      dockerfile: ProductService/Dockerfile
+      dockerfile: ProductService/ProductService/Dockerfile
     image: dotnet-product-service
     container_name: dotnet-product-service
     ports:
@@ -76,7 +76,7 @@ services:
   dotnet-dashboard-service:
     build: 
       context: ../
-      dockerfile: DashboardService/Dockerfile
+      dockerfile: DashboardService/DashboardService/Dockerfile
     image: dotnet-dashboard-service
     container_name: dotnet-dashboard-service
     ports:

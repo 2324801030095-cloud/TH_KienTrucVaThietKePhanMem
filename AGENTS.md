@@ -12,9 +12,9 @@ This workspace contains the .NET 8 insurance-agent microservices sample plus the
 - The integration-test project may require Docker and Elasticsearch.
 
 ## Layout
-- `*Service.Api/`: service contracts, commands, queries, DTOs, and events
-- `*Service/`: service implementation
-- `*Service.Test/`: unit or integration test projects
+- `<Service>/<Service.Api>/`: service contracts, commands, queries, DTOs, and events
+- `<Service>/<Service>/`: service implementation
+- `<Service>/<Service.Test>/`: unit or integration test projects
 - `AgentPortalApiGateway/AgentPortalApiGateway/`: API Gateway project
 - `BlazorWasmClient/BlazorWasmClient/`: Blazor client; API project references resolve from the workspace root
 - `Web/Web/`: Vue client

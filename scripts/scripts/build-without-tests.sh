@@ -1,13 +1,13 @@
-dotnet build ../ProductService.Api
-dotnet build ../PricingService.Api
-dotnet build ../PolicyService.Api
-dotnet build ../PaymentService.Api
-dotnet build ../PolicySearchService.Api
+dotnet build ../ProductService/ProductService/ProductService.Api
+dotnet build ../PricingService/PricingService/PricingService.Api
+dotnet build ../PolicyService/PolicyService/PolicyService.Api
+dotnet build ../PaymentService/PaymentService/PaymentService.Api
+dotnet build ../PolicySearchService/PolicySearchService/PolicySearchService.Api
 
 dotnet build ../AgentPortalApiGateway
-dotnet build ../AuthService
-dotnet build ../ProductService
-dotnet build ../PricingService
-dotnet build ../PolicyService
-dotnet build ../PaymentService
-dotnet build ../PolicySearchService
+dotnet build ../AuthService/AuthService
+dotnet build ../ProductService/ProductService
+dotnet build ../PricingService/PricingService
+dotnet build ../PolicyService/PolicyService
+dotnet build ../PaymentService/PaymentService
+dotnet build ../PolicySearchService/PolicySearchService

@@ -61,11 +61,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Test", "Prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService\ProductService.csproj", "{213E0F79-91B1-44AD-91A3-93AD2FCC2491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Api", "DocumentService.Api\DocumentService.Api.csproj", "{5DCAC9F1-F542-4C22-8174-2B23D74EE78F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Api", "DocumentService\DocumentService.Api\DocumentService.Api.csproj", "{5DCAC9F1-F542-4C22-8174-2B23D74EE78F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService", "DocumentService\DocumentService.csproj", "{1A40D0F1-F854-4E8D-A7F1-84AA7A683B44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService", "DocumentService\DocumentService\DocumentService.csproj", "{1A40D0F1-F854-4E8D-A7F1-84AA7A683B44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Test", "DocumentService.Test\DocumentService.Test.csproj", "{B3DE23B9-3506-4601-8DE1-9D8CA6CB7A87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Test", "DocumentService\DocumentService.Test\DocumentService.Test.csproj", "{B3DE23B9-3506-4601-8DE1-9D8CA6CB7A87}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway.Api", "AgentPortalApiGateway\AgentPortalApiGateway.Api\AgentPortalApiGateway.Api.csproj", "{B0D7E27B-08CE-448F-8C0F-7F8763D370FA}"
 EndProject

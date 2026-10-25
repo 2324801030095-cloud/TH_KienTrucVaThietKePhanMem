@@ -14,7 +14,7 @@ Các project nhắm `net8.0`. Cần cài .NET 8 SDK/runtime và có kết nối 
 
 ## Microservices
 
-Tám service Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing và Product được gom theo thư mục `<Service>/`, mỗi thư mục chứa `<Service>.Api/`, `<Service>/` (implementation) và `<Service>.Test/`. Document Service giữ nguyên các project riêng hiện có. Các service: Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing, Product và Document. Pricing còn có project kiểm thử tích hợp riêng. Ba project của Document Service hiện là khung theo yêu cầu Task #1; tích hợp JS Report chưa được triển khai.
+Chín service Auth, Chat, Dashboard, Payment, Policy Search, Policy, Pricing, Product và Document được gom theo thư mục `<Service>/`, mỗi thư mục chứa `<Service>.Api/`, `<Service>/` (implementation) và `<Service>.Test/` Pricing còn có project kiểm thử tích hợp riêng. Ba project của Document Service hiện là khung theo yêu cầu Task #1; tích hợp JS Report chưa được triển khai.
 
 ## Hạ tầng và dữ liệu
 
